@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "Image Collector for Face Classification Datasets",
+  "version": "0.0.1",
+  "description": "googleの画像検索画面内に表示された画像のURL一覧を取得する",
+  "content_scripts": [{
+    "matches": ["https://www.google.co.jp/search*"],
+    "js": ["collect_img.js"]
+  }]
+}
