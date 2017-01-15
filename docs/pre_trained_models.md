@@ -18,7 +18,7 @@ ${クラス識別子}_${n_base_unit}.npz
 * I2: [FaceClassifier100x100I2](../cnn_models.py#L21)
 
 クラスごとの識別能力は I2 > A >>> I  
-ただし、I2とAの識別能力はは`n_base_unit`の設定次第で逆転する。
+ただし、I2とAの識別能力は`n_base_unit`の設定次第で逆転する。
 
 ### n_base_unit
 

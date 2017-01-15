@@ -1,6 +1,7 @@
 # coding: utf-8
 
 import json
+import pickle
 import os
 import sys
 import cv2
@@ -52,7 +53,8 @@ def main(config_file):
 
     trainer.run()
 
-    chainer.serializers.save_npz(conf['re_train']['out_file'], model)
+    with open(conf['re_train']['out_file'], mode='wb') as fp:
+        pickle.dump(model, fp)
 
 def create_dataset(root_dir):
     data_pairs = []
