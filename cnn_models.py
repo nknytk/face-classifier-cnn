@@ -246,12 +246,12 @@ class FaceClassifier100x100_Relearn(chainer.Chain):
         h = self.fc2(h)
         return h
 
-    def claasify(self, img, resize=True, bgr2rgb=True):
+    def classify(self, img, resize=True, bgr2rgb=True):
         if resize:
             img = cv2.resize(img, (100, 100))
         t_img = img.transpose(2, 0, 1)  # width, height, channel -> channel, width, height
         if bgr2rgb:
             t_img = numpy.array([t_img[2], t_img[1], t_img[0]])  # BGR -> RGB
         x = chainer.Variable(numpy.asarray([t_img], dtype=numpy.float32), volatile="on")
-        label = numpy.argmax(model.predict(x).data[0])
+        label = numpy.argmax(self.predict(x).data[0])
         return label
