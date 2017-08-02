@@ -29,7 +29,7 @@ class Fetcher:
         return b_content, mime
 
 
-fetcher = Fetcher(MY_EMAL_ADDR)
+fetcher = Fetcher(MY_EMAIL_ADDR)
 
 
 def main(name_file, from_id):
@@ -58,6 +58,8 @@ def fetch_and_save_img(label, word):
         if not mime or not img:
             continue
         ext = guess_extension(mime.split(';')[0])
+        if ext == '.jpe':
+            ext = '.jpg'
         if not ext:
             continue
         result_file = os.path.join(data_dir, str(i) + ext)
