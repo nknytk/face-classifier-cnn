@@ -26,3 +26,7 @@
 * [学習](docs/train.md)
 * [事前学習済みモデル](docs/pre_trained_models.md)
 * [識別性能の検証結果](docs/performance.md)
+
+## License
+
+MIT License (see `LICENSE` file).
