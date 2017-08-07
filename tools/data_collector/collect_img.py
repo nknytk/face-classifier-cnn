@@ -58,7 +58,7 @@ def fetch_and_save_img(label, word):
         if not mime or not img:
             continue
         ext = guess_extension(mime.split(';')[0])
-        if ext == '.jpe':
+        if ext in ('.jpe', '.jpeg'):
             ext = '.jpg'
         if not ext:
             continue

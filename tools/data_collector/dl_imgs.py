@@ -41,6 +41,8 @@ def download(img_url):
             ext = mimetypes.guess_extension(content_type.split(';')[0])
             if not ext:
                 return None, None
+            if ext in ('.jpeg', '.jpe'):
+                ext = '.jpg'
             return byte_content, ext
     except:
         print('Error in downloading ' + img_url)
