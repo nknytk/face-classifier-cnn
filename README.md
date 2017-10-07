@@ -14,7 +14,7 @@
 * OS: Ubuntu 16.04 または Raspbian Jessie
 * Python 3
 * OpenCV 3.1.0 with Python 3 binding
-* chainer 1.18
+* chainer 2.1.0
 * Pillow 4
 * BeatifulSoup 4
 
