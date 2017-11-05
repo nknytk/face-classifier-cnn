@@ -1,4 +1,4 @@
-# 顔分類CNNツール
+# 顔分類CNNツール v2
 
 顔写真から個人を識別するCNNモデルの実装と、学習用データセット作成補助ツール。  
 
@@ -30,8 +30,8 @@
 
 参考
 
-* [識別性能の検証結果(旧版)](docs/performance_v1.md)
-* [現行版の旧版の違い](docs/comparison_v1_v2.md)
+* [識別性能の検証結果(v1)](docs/performance_v1.md)
+* [v2のv1の違い](docs/comparison_v1_v2.md)
 
 ## License
 
