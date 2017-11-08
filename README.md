@@ -12,12 +12,15 @@
 
 ## Requirements
 
-* OS: Ubuntu 16.04 または Raspbian Jessie
-* Python 3
-* OpenCV 3.1.0 with Python 3 binding
-* chainer 3.0.0
-* Pillow 4
-* BeatifulSoup 4
+* 必須
+    - OS: Ubuntu 16.04 または Raspbian Jessie
+    - Python 3
+* データセット作成補助ツールに必要
+    - BeatifulSoup 4
+    - OpenCV 3.1.0 with Python 3 binding
+* 画像分類モデルの使用に必要
+    - chainer 3.0.0
+    - Pillow 4
 
 ## ドキュメント
 
